@@ -366,7 +366,7 @@ a {
 }
 .icons-nav:hover,
 .icons-nav:focus {
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 .icons-clients {
   width: 106px;
