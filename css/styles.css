@@ -372,6 +372,10 @@ a {
   width: 106px;
   height: 60px;
 }
+.icons-clients:hover,
+.icons-clients:focus {
+  fill: var(--accent-color);
+}
 
 /***************Footer **************/
 .footer {
@@ -423,7 +427,7 @@ a {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0, 3em;
+  letter-spacing: 0, 03em;
   color: var(--primary-white-color);
 }
 
@@ -436,6 +440,7 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
+
 .product-type .product-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -470,11 +475,14 @@ a {
 .flex-item {
   border: 1px solid #eeeeee;
 }
-/* .flex-card {
-  box-shadow: 0px 1px 1px rgba(0 0 0/ 12%), opx 4px 4px rgba(0 0 0/ 6%),
-    1px 4px 6px rgba(0 0 0 / 16%);
+.flex-item {
   border-radius: 0px 0px 4px 4px;
-} */
+}
+.flex-item:hover,
+.flex-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .flex-element > .flex-item {
   flex-basis: calc(100% / 3 - var(--flex-element-gar));
   margin-left: var(--flex-element-gar);
@@ -498,4 +506,11 @@ a {
   line-height: 1.9;
   padding: 0;
   margin: 0;
+}
+.product-item {
+  border-radius: 0px 0px 4px 4px;
+}
+.product-item:hover,
+.product-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
