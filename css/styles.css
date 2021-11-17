@@ -80,6 +80,7 @@ a {
   margin-left: 50px;
 }
 .site-nav .link {
+  display: flex;
   color: var(--title-text-color);
 }
 .site-nav .link:hover,
@@ -99,7 +100,6 @@ a {
 
 .link.current {
   color: var(--title-text-color);
-  background: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.02em;
@@ -482,14 +482,14 @@ a {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /****************Flex***************/
-.flex-element.menu {
+.flex-element {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.flex-element.menu > .flex-item {
+.flex-element > .flex-item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: var(--flex-element-gar);
   margin-top: var(--flex-element-gar);
@@ -498,11 +498,13 @@ a {
 .flex-item {
   border: 1px solid rgba(238, 238, 238, 1);
 }
-.flex-item:hover,
-.flex-item:focus {
+
+.flex-element .flex-item:hover,
+.flex-element .flex-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.6),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .card-set {
   padding: 20px 24px;
 }
